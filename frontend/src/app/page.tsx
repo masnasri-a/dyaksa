@@ -7,6 +7,7 @@ import Hero from "./common/hero";
 import Description from "./common/description";
 import BlogLanding from "./common/blog";
 import Pricelist from "./common/pricelist";
+import Review from "./common/review";
 
 interface HomePagesProps {
   logoUrl: string;
@@ -21,6 +22,7 @@ export default function HomePages() {
       <Hero />
       <BlogLanding />
       <Pricelist />
+      <Review />
     </>
   );
 }
