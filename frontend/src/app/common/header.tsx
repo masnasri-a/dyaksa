@@ -11,8 +11,8 @@ export default function Headers() {
     { title: 'Home', url: '/' },
     { title: 'Portofolio', url: '/blog' },
     { title: 'Pricelist', url: '/pricelist' },
-    { title: 'Review', url: '/review' },
-    { title: 'Contact', url: '/contact' }
+    // { title: 'Review', url: '/review' },
+    // { title: 'Contact', url: '/contact' }
   ];
 
   useEffect(() => {
@@ -41,14 +41,14 @@ export default function Headers() {
       <Menu />
       </button>
       <div className="hidden md:flex">
-        <a href="" className='border px-4 py-1 flex items-center justify-center text-white border-neutral-200 rounded-2xl font-light text-sm hover:blu hover:text-white hover:transition'><span>Book Now</span></a>
+        <a href="/pricelist" className='border px-4 py-1 flex items-center justify-center text-white border-neutral-200 rounded-2xl font-light text-sm hover:blu hover:text-white hover:transition'><span>Book Now</span></a>
       </div>
       {isMobileMenuOpen && (
         <div className="absolute top-16 left-0 w-full backdrop-blur-xl flex flex-col gap-4 pb-5 items-center md:hidden bg-black bg-opacity-15">
           {MENU.map((item, index) => (
             <a key={index} href={item.url} className="my-2 text-white hover:text-gray-500 transition duration-300">{item.title}</a>
           ))}
-          <a href="" className='border px-4 py-1 my-2 flex items-center justify-center text-white border-neutral-200 rounded-2xl font-light text-sm hover:blu hover:text-white hover:transition'><span>Book Now</span></a>
+          <a href="/pricelist" className='border px-4 py-1 my-2 flex items-center justify-center text-white border-neutral-200 rounded-2xl font-light text-sm hover:blu hover:text-white hover:transition'><span>Book Now</span></a>
         </div>
       )}
     </div>
