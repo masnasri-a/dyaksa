@@ -1,3 +1,4 @@
+import { Yellowtail } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -55,7 +56,11 @@ export default {
   			oswald: [
   				'Oswald',
   				'sans-serif'
-  			]
+  			],
+			yellowtail: [
+				'Yellowtail',
+				'cursive'
+			]
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

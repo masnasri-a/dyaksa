@@ -33,13 +33,13 @@ const Hero = () => {
                     <Image src={media[0]} alt="Picture of the author" fill className="!relative object-cover z-0 opacity-80 " />
                 )
             }
-            <div className="absolute top-0 left-0 z-10 flex flex-col justify-center items-center w-full h-full text-white gap-5">
+            <div className="absolute top-0 left-0 z-10 flex flex-col justify-center items-center w-full h-full text-white gap-5 px-4">
                 <div className="flex items-center justify-center gap-3">
-                    <div className="h-[1px] w-28 bg-white"></div>
-                    <span className='text-xl mb-2'>Dyaksa Photography</span>
-                    <div className="h-[1px] w-28 bg-white"></div>
+                    <div className="h-[1px] w-16 md:w-28 bg-white"></div>
+                    <span className='text-sm md:text-xl mb-2'>Dyaksa Photography</span>
+                    <div className="h-[1px] w-16 md:w-28 bg-white"></div>
                 </div>
-                <span className='text-2xl md:text-4xl w-7/12 mx-auto text-center'>Capturing Moments, Creating Stories</span>
+                <span className='text-lg md:text-4xl w-full md:w-7/12 mx-auto text-center'>Capturing Moments, Creating Stories</span>
             </div>
         </div>
     );

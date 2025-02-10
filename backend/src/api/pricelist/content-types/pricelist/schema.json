@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pricelists",
+  "info": {
+    "singularName": "pricelist",
+    "pluralName": "pricelists",
+    "displayName": "Pricelist",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "OriginalPrice": {
+      "type": "string"
+    },
+    "IsDiscount": {
+      "type": "boolean"
+    },
+    "DiscountPercentage": {
+      "type": "string"
+    },
+    "DiscountPrice": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Feature": {
+      "type": "richtext"
+    }
+  }
+}

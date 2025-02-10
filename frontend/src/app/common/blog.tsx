@@ -35,13 +35,13 @@ const BlogLanding = () => {
         <div className='w-full flex flex-col items-center space-y-5 mt-10 mb-10'>
             <Image src={Assets1} alt='blog' className='h-8 object-cover w-8' />
             <span className='text-2xl font-bold'>Portofolio</span>
-            <div className="flex gap-4">
-                {blogs && blogs.map((blog, index) => (
-                    <div key={index} className='w-1/3 h-80 relative'>
-                        <a href={`/blog/${blog.slug}`} className='w-full h-full'>
-                            <Image src={blog.url} alt='blog' className='h-80 object-cover w-full' width={500} height={320} />
-                        </a>
-                    </div>))}
+            <div className="flex flex-wrap gap-4 justify-center md:justify-center">
+            {blogs && blogs.map((blog, index) => (
+                <div key={index} className='w-full md:w-3/12 h-80 relative'>
+                <a href={`/blog/${blog.slug}`} className='w-full h-full'>
+                    <Image src={blog.url} alt='blog' className='h-80 object-cover w-full' width={500} height={320} />
+                </a>
+                </div>))}
             </div>
             <button className='border px-4 py-1 flex items-center justify-center text-neutral-700 border-neutral-500 rounded-2xl font-light text-sm hover:blu hover:text-black hover:transition'><span>View All Portofolio</span></button>
         </div>

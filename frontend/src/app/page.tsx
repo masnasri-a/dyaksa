@@ -8,6 +8,7 @@ import Description from "./common/description";
 import BlogLanding from "./common/blog";
 import Pricelist from "./common/pricelist";
 import Review from "./common/review";
+import Footer from "./common/footer";
 
 interface HomePagesProps {
   logoUrl: string;
@@ -23,6 +24,7 @@ export default function HomePages() {
       <BlogLanding />
       <Pricelist />
       <Review />
+      <Footer />
     </>
   );
 }
