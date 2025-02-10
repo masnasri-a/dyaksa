@@ -1,6 +1,5 @@
 import { BadgeCheck } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 const Pricelist = () => {

@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import Headers from '../common/header'
 import { Card } from '@/components/ui/card';
 import Image from 'next/image';
-import { features } from 'process';
 import { hiddenNumber } from '@/lib/utils';
 
 const PricePage = () => {

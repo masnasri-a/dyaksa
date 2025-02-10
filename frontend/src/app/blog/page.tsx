@@ -1,6 +1,5 @@
 "use client";
 import { Card } from '@/components/ui/card';
-import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 interface BlogData {
