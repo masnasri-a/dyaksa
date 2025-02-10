@@ -13,7 +13,7 @@ const BlogLanding = () => {
     React.useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await fetch('http://localhost:1337/api/blogs?pagination%5Blimit%5D=3&populate=%2A');
+                const response = await fetch(process.env.NEXT_PUBLIC_BASE_API + '/blogs?pagination%5Blimit%5D=3&populate=%2A');
                 const data = await response.json();
                 const content = data.data;
                 for (let i = 0; i < content.length; i++) {

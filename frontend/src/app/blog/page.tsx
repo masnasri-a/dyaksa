@@ -14,7 +14,7 @@ const BlogPage = () => {
   useEffect(() => {
     const fetchBlogData = async () => {
       try {
-        const response = await fetch('http://localhost:1337/api/blogs?populate=%2A');
+        const response = await fetch(process.env.NEXT_PUBLIC_BASE_API + '/blogs?populate=%2A');
         const data = await response.json();
         const content = data.data;
         let temps: BlogData[] = [];

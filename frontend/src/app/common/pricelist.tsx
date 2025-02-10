@@ -6,7 +6,7 @@ const Pricelist = () => {
     const [bgPrice, setBgPrice] = useState("");
 
     useEffect(() => {
-        fetch('http://localhost:1337/api/contents?fields=key&populate=%2A&filters%5Bkey%5D=bg-pricelist')
+        fetch(process.env.NEXT_PUBLIC_BASE_API + '/contents?fields=key&populate=%2A&filters%5Bkey%5D=bg-pricelist')
             .then(response => response.json())
             .then(data =>
                 setBgPrice(process.env.NEXT_PUBLIC_BASE_API?.replace("/api", "") + data.data[0].Media[0].url)

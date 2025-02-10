@@ -18,7 +18,7 @@ export default function Headers() {
   useEffect(() => {
     const fetchLogo = async () => {
       try {
-        const response = await axios.get('http://localhost:1337/api/contents?populate=%2A&filters%5Bkey%5D=logo');
+        const response = await axios.get(process.env.NEXT_PUBLIC_BASE_API + '/contents?populate=%2A&filters%5Bkey%5D=logo');
         const logoUrl = process.env.NEXT_PUBLIC_BASE_API?.replace("/api", "") + response.data.data[0].Media[0].url;
         setLogoUrl(logoUrl);
       } catch (error) {

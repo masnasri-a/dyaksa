@@ -6,7 +6,7 @@ const Description = () => {
     React.useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:1337/api/contents?populate=%2A&filters%5Bkey%5D=Description');
+                const response = await fetch(process.env.NEXT_PUBLIC_BASE_API + '/contents?populate=%2A&filters%5Bkey%5D=Description');
                 const data = await response.json();
                 setMedia(data.data[0].value);
             } catch (error) {

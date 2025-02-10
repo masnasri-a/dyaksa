@@ -8,7 +8,7 @@ const Hero = () => {
     React.useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:1337/api/contents?populate=%2A&filters%5Bkey%5D=hero');
+                const response = await fetch(process.env.NEXT_PUBLIC_BASE_API + '/contents?populate=%2A&filters%5Bkey%5D=hero');
                 const data = await response.json();
                 const listMedia = data.data[0].Media;
                 const medias: string[] = [];
